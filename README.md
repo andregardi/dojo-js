@@ -1,10 +1,12 @@
-# DOJO Javascript #1
+# DOJO Javascript #2
 
-Vamos escrever um programa que verifica se um algarismo romano está corretamente estruturado e caso esteja retorna o seu valor em números decimais.
-- Intervalo de números romanos: 1 a 3999
-- Caso a entrada seja inválida o programa deve retornar false
-- Sendo válida o número decimal é retornado
-- Ex: `LXXV → { isValid: true, value: 85 }`
-- Ex: `XXXX → { isValid: false, value: NaN }`
+Esta é uma versao simplificada do problema do hotel do nosso processo seletivo.
+O arquivo hotels exporta um array de 3 hoteis.
+Cada hotel tem tarifas de preco para dia de semana e dias de fim de semana.
+O objetivo final é: dado um número de dias de semana e de fim de semana, identificar o nome do hotel com a tarefa mais barata. Caso os precos mais baratos estejam empatados, escolher o hotel com maior rating.
 
-Solução: https://github.com/phcp/dojo-js/commit/7a05e00b3f25d58cf0cc4a9a5fb226a9dcc4174e
+Passos:
+1 - Terminar a funcao getPrice, usando o destructuring para ler valores do hotel.
+2 - Usar o map e o spread operator para criar um clones do array de hoteis com os precos
+3 - usar o sort para escolher o hotel
+4 - printar o nome do hotel escolhido
